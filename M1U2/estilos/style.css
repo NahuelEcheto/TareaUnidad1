@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.body-principal{
+    font-family: "Inter", sans-serif;
+    background-color: #444;
+    display: grid;
+    grid-template-areas: 
+        "foto-cv foto-cv foto-cv"
+        "h1 h1 h1"
+        "info-personal info-personal info-personal"
+        "info-perfil info-perfil info-perfil"
+        "peliculas peliculas peliculas"
+        "series series series"
+        "contacto contacto contacto";
+}
+
+.foto-cv{
+    grid-area: foto-cv;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+h1{
+    grid-area: h1;
+    color: #fff;
+    margin: 20px;
+    text-align: center;
+}
+
+.info-personal{
+    grid-area: info-personal;
+    color: #fff;
+    font-size: 15px;
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.peliculas{
+    grid-area: peliculas;
+    color: #fff;
+    margin: 20px;
+    text-align: center;
+}
+
+.peliculas h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.peliculas ul li{
+    font-size: 19px;
+    list-style: none;
+    margin-left: 12px;
+}
+
+.series{
+    grid-area: series;
+    color: #fff;
+    margin: 20px;
+    text-align: center;
+}
+
+.series h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.series ul li{
+    font-size: 19px;
+    list-style: none;
+    margin-left: 12px;
+}
+
+
+.info-perfil{
+    grid-area: info-perfil;
+    color: #fff;
+    margin: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.info-perfil h2{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.info-perfil p{
+    margin-left: 12px;
+    font-size: 19px;
+}
+
+.contacto {
+    color: #fff;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    grid-area: contacto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contacto h4 {
+    width: 700px;
+}
+
+.contacto h4 a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center
+} 
+
+.contacto h4 a:hover{
+    color: black;
+}
+
+
+
+.body-form{
+    font-family: "Inter", sans-serif;
+    background-color: #444;
+    display: grid;
+}
+
+.titulo-form{
+    color: #fff;
+    margin: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.formulario p{
+    text-align: center;
+    margin: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.formulario p input{
+    background-color: #ffffff70;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.formulario p .boton{
+    color: #fff;
+    padding: 10px;
+    background-color: black;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.formulario p .boton:hover{
+    transform: scale(1.1);
+    background-color: #fff;
+    color: black;
+}
